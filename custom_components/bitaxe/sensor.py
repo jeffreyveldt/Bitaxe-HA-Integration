@@ -4,7 +4,7 @@ from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 
 _LOGGER = logging.getLogger(__name__)
 
-DOMAIN = "bitaxe"
+DOMAIN = "bitaxe2"
 
 SENSOR_NAME_MAP = {
     "power": "Power Consumption",
