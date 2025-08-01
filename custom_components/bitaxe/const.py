@@ -1,1 +1,1 @@
-DOMAIN = "bitaxe"
+DOMAIN = "bitaxe2"
