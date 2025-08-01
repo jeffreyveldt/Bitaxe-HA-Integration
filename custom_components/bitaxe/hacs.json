@@ -9,6 +9,6 @@
   "documentation": "https://github.com/DerMiika/Bitaxe-HA-Integration",
   "version": "1.0.4",
   "zip_release": false,
-  "filename": "custom_components/bitaxe",
+  "filename": "custom_components/bitaxe2",
   "codeowners": ["@DerMiika, @Hansch"]
 }
