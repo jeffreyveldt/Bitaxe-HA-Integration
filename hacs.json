@@ -10,6 +10,6 @@
   "version": "1.0.4",
   "zip_release": false,
   "filename": "custom_components/bitaxe",
-  "codeowners": ["@DerMiika"]
+  "codeowners": ["@DerMiika, @Hansch"]
   "logo": "custom_components/bitaxe/images/bitaxe_icon.png"
 }
