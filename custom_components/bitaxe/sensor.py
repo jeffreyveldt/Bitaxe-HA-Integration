@@ -17,6 +17,10 @@ SENSOR_NAME_MAP = {
     "fanspeed": "Fan Speed",
     "fanrpm": "Fan RPM",
     "uptimeSeconds": "Uptime",
+    "voltage": "Voltage level",
+    "coreVoltage": "Core voltage level",
+    "coreVoltageActual": "Actual core voltage level",
+    "vrTemp": "Voltageregulators Temperature" 
 }
 
 async def async_setup_entry(hass, entry, async_add_entities):
@@ -37,6 +41,10 @@ async def async_setup_entry(hass, entry, async_add_entities):
         BitAxeSensor(coordinator, "fanspeed", device_name),
         BitAxeSensor(coordinator, "fanrpm", device_name),
         BitAxeSensor(coordinator, "uptimeSeconds", device_name),
+        BitAxeSensor(coordinator, "voltage", device_name),
+        BitAxeSensor(coordinator, "coreVoltage", device_name),
+        BitAxeSensor(coordinator, "coreVoltageActual", device_name),
+        BitAxeSensor(coordinator, "vrTemp", device_name),
     ]
 
     async_add_entities(sensors, update_before_add=True)
@@ -107,4 +115,12 @@ class BitAxeSensor(Entity):
             return "mdi:thermometer"
         elif sensor_type == "uptimeSeconds":
             return "mdi:clock"
+        elif sensor_type == "voltage":
+            return "mdi:flash"
+        elif sensor_type == "coreVoltage":
+            return "mdi:flash"
+        elif sensor_type == "coreVoltageActual":
+            return "mdi:flash"
+        elif sensor_type == "vrTemp":
+            return "mdi:thermometer"
         return "mdi:help-circle"
